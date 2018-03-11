@@ -1,0 +1,13 @@
+name: crystal_genealogy
+version: 0.1.0
+
+authors:
+  - Henry <henriiiiiiiiiii@gmail.com>
+
+targets:
+  crystal_genealogy:
+    main: src/crystal_genealogy.cr
+
+crystal: 0.24.1
+
+license: MIT
