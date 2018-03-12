@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/Riib11/crystal_genealogy">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>Genealogy::Member - github.com/Riib11/crystal_genealogy</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class=" " data-id="github.com/Riib11/crystal_genealogy/toplevel" data-name="top level namespace">
+      <a href="../toplevel.html">Top Level Namespace</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Riib11/crystal_genealogy/CrystalGenealogy" data-name="crystalgenealogy">
+      <a href="../CrystalGenealogy.html">CrystalGenealogy</a>
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/Riib11/crystal_genealogy/Genealogy" data-name="genealogy">
+      <a href="../Genealogy.html">Genealogy</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/Riib11/crystal_genealogy/Genealogy/Chromosome" data-name="genealogy::chromosome">
+      <a href="../Genealogy/Chromosome.html">Chromosome</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Riib11/crystal_genealogy/Genealogy/Fitness" data-name="genealogy::fitness">
+      <a href="../Genealogy/Fitness.html">Fitness</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Riib11/crystal_genealogy/Genealogy/Gene" data-name="genealogy::gene">
+      <a href="../Genealogy/Gene.html">Gene</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Riib11/crystal_genealogy/Genealogy/Genealogy" data-name="genealogy::genealogy">
+      <a href="../Genealogy/Genealogy.html">Genealogy</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Riib11/crystal_genealogy/Genealogy/Generation" data-name="genealogy::generation">
+      <a href="../Genealogy/Generation.html">Generation</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Riib11/crystal_genealogy/Genealogy/Index" data-name="genealogy::index">
+      <a href="../Genealogy/Index.html">Index</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/Riib11/crystal_genealogy/Genealogy/Member" data-name="genealogy::member">
+      <a href="../Genealogy/Member.html">Member</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Riib11/crystal_genealogy/Genealogy/Parameters" data-name="genealogy::parameters">
+      <a href="../Genealogy/Parameters.html">Parameters</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">struct</span> Genealogy::Member
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Genealogy/Member.html">Genealogy::Member</a></li><li class="superclass">Struct</li><li class="superclass">Value</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>A single member of a genealogy.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/Riib11/crystal_genealogy/blob/426deb2b8647d7899ea6c4e59448d7175a609080/src/crystal_genealogy/genealogy/genealogy.cr#L17" target="_blank">crystal_genealogy/genealogy/genealogy.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28gene_count%29-class-method" class="signature"><strong>.new</strong>(gene_count)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#children%3AArray%28Member%29-instance-method" class="signature"><strong>#children</strong> : Array(Member)</a>
+        
+          <div class="summary"><p>the members that were created subsequently as offspring, where this member was at least on of the parents.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#children%3D%28children%3AArray%28Member%29%29-instance-method" class="signature"><strong>#children=</strong>(children : Array(Member))</a>
+        
+          <div class="summary"><p>the members that were created subsequently as offspring, where this member was at least on of the parents.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#chromosome%3AChromosome-instance-method" class="signature"><strong>#chromosome</strong> : Chromosome</a>
+        
+          <div class="summary"><p>the collection of genes for this member.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#chromosome%3D%28chromosome%3AChromosome%29-instance-method" class="signature"><strong>#chromosome=</strong>(chromosome : Chromosome)</a>
+        
+          <div class="summary"><p>the collection of genes for this member.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fitness%3AFitness-instance-method" class="signature"><strong>#fitness</strong> : Fitness</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gene%28ind%3AIndex%29%3AGene-instance-method" class="signature"><strong>#gene</strong>(ind : Index) : Gene</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_gene%28ind%3AIndex%2Cgene%3AGene%29%3ANil-instance-method" class="signature"><strong>#set_gene</strong>(ind : Index, gene : Gene) : Nil</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(gene_count)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(gene_count)
+
+        <a class="method-permalink" href="#new%28gene_count%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Riib11/crystal_genealogy/blob/426deb2b8647d7899ea6c4e59448d7175a609080/src/crystal_genealogy/genealogy/genealogy.cr#L23" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="children:Array(Member)-instance-method">
+      <div class="signature">
+        
+        def <strong>children</strong> : Array(<a href="../Genealogy/Member.html">Member</a>)
+
+        <a class="method-permalink" href="#children%3AArray%28Member%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>the members that were created subsequently as offspring, where this member was at least on of the parents.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Riib11/crystal_genealogy/blob/426deb2b8647d7899ea6c4e59448d7175a609080/src/crystal_genealogy/genealogy/genealogy.cr#L21" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="children=(children:Array(Member))-instance-method">
+      <div class="signature">
+        
+        def <strong>children=</strong>(children : Array(<a href="../Genealogy/Member.html">Member</a>))
+
+        <a class="method-permalink" href="#children%3D%28children%3AArray%28Member%29%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>the members that were created subsequently as offspring, where this member was at least on of the parents.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Riib11/crystal_genealogy/blob/426deb2b8647d7899ea6c4e59448d7175a609080/src/crystal_genealogy/genealogy/genealogy.cr#L21" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="chromosome:Chromosome-instance-method">
+      <div class="signature">
+        
+        def <strong>chromosome</strong> : <a href="../Genealogy/Chromosome.html">Chromosome</a>
+
+        <a class="method-permalink" href="#chromosome%3AChromosome-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>the collection of genes for this member.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Riib11/crystal_genealogy/blob/426deb2b8647d7899ea6c4e59448d7175a609080/src/crystal_genealogy/genealogy/genealogy.cr#L19" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="chromosome=(chromosome:Chromosome)-instance-method">
+      <div class="signature">
+        
+        def <strong>chromosome=</strong>(chromosome : <a href="../Genealogy/Chromosome.html">Chromosome</a>)
+
+        <a class="method-permalink" href="#chromosome%3D%28chromosome%3AChromosome%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>the collection of genes for this member.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Riib11/crystal_genealogy/blob/426deb2b8647d7899ea6c4e59448d7175a609080/src/crystal_genealogy/genealogy/genealogy.cr#L19" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fitness:Fitness-instance-method">
+      <div class="signature">
+        
+        def <strong>fitness</strong> : <a href="../Genealogy/Fitness.html">Fitness</a>
+
+        <a class="method-permalink" href="#fitness%3AFitness-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Riib11/crystal_genealogy/blob/426deb2b8647d7899ea6c4e59448d7175a609080/src/crystal_genealogy/genealogy/genealogy.cr#L36" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gene(ind:Index):Gene-instance-method">
+      <div class="signature">
+        
+        def <strong>gene</strong>(ind : <a href="../Genealogy/Index.html">Index</a>) : <a href="../Genealogy/Gene.html">Gene</a>
+
+        <a class="method-permalink" href="#gene%28ind%3AIndex%29%3AGene-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Riib11/crystal_genealogy/blob/426deb2b8647d7899ea6c4e59448d7175a609080/src/crystal_genealogy/genealogy/genealogy.cr#L28" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_gene(ind:Index,gene:Gene):Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>set_gene</strong>(ind : <a href="../Genealogy/Index.html">Index</a>, gene : <a href="../Genealogy/Gene.html">Gene</a>) : Nil
+
+        <a class="method-permalink" href="#set_gene%28ind%3AIndex%2Cgene%3AGene%29%3ANil-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Riib11/crystal_genealogy/blob/426deb2b8647d7899ea6c4e59448d7175a609080/src/crystal_genealogy/genealogy/genealogy.cr#L32" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
